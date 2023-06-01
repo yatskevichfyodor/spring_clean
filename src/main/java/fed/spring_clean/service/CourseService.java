@@ -2,10 +2,12 @@ package fed.spring_clean.service;
 
 import fed.spring_clean.model.Course;
 import fed.spring_clean.repository.CourseRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CourseService implements CrudService<Course> {
 
     private final CourseRepository repository;

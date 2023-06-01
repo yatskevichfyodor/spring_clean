@@ -1,10 +1,12 @@
 package fed.spring_clean.repository;
 
 import fed.spring_clean.model.Course;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class CourseRepository implements CrudRepository<Course> {
 
     @Override
